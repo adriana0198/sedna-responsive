@@ -1,162 +1,198 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;  
 }
-
-.barra ul li a, .login {
+nav{
+    box-shadow: 0 0 transparent;
+}
+nav .row{
+    margin: 0;
+}
+nav .container{
+    width: 90%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 28.5px 0;
+}
+nav .login{
+    margin-right: 40px;
+}
+nav .login>li:nth-child(2)>a{
+    background-color: transparent;
+    box-shadow: 0 0 transparent;
+    padding: 0 40px;
+    border-radius: 100px;
+    border: 1.5px white solid;
+}
+nav .login>li:nth-child(2)>a:hover{
+    border: solid 1px #FF5274;
+}
+nav ul li a, .login {
     transition: .4s;
     font-size: 13px;
 }
-.barra ul li a:hover, .login:hover {
+nav ul li a:hover, .login:hover {
     color: #FF5274;
     background: transparent;
 }
-.barra{
-    padding: 30px 110px;
-    height: auto;
-    background: none;
-    box-shadow: 0 0 0 0;
-    border-bottom: 1px #aaa solid;
+section .row{
+    padding: 120px 0;
 }
-.barra .row{
-    margin: 0;
+section .row .col .intro-icon{
+    margin-right: 20px;
+}
+.intro-icon, .intro-content{
+    display: inline-block;
+}
+@media only screen and (max-width: 991px) {
+  section .row .col .intro-content {
+    width: 75%;
+}  
+.intro{
+    padding-top: 28%;
+}
+}
+@media only screen and (max-width: 1200px){
+    .intro{
+        padding-top: 28%;
+    }
 }
 
-img.responsive-img{
-    position: relative;
-    margin-left: -121px;
-}
-nav ul.left{
-    margin-top: -5px;
-    margin-left: -113px;
-}
-.row .col.s3 {
-    position: absolute;
-    right: 0px;
-    margin-top: -3px;
-}
 .intro{
     width: 100%;
-    
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15%;
 }
 .intro h1{
-    display: inline-block;
     font-size: 60px;
     color: white;
-    margin-left: 296px;
-    margin-top: 138px;
+    margin: auto;  
+    width: fit-content;
 }
-.intro h2{
-    position: absolute;
+.intro p{
     font-size: 20px;
-    font-weight: 300;
     color: white;
-    margin-left: 205px;
-    margin-top: 20px;
 }
-.container{
-    width: 92%;
-}
+
 .fondo{
     position: relative;
-    padding: 0 41px;
-    height: 750px;
-    background: url(../assets/hero.jpg);
+    min-height: 750px;
+    background: url(../assets/hero.jpg) center center;
+    background-size: cover;
 }
-.login{
-    margin: 25px;
-    margin-left: 640px;
-}
-.boton{
+.btn{
     padding: 8px 35px 8px 35px;
     border-radius: 100px;
     font-size: 13px;
     border: 1.5px white solid;
   }
-  .login{
-      margin: 30px;
-  }
-  .boton{
+.btn{
     transition: .4s;
   }
-  .boton:hover{
+.btn:hover{
     color: #FF5274;
     border: 1.5px #FF5274 solid;
     background: transparent;
   }
-
 .intro article{
-    position: absolute;
-    margin-top: 165px;
-    margin-left: 467px;
+    margin-right: 188px;
+    margin-top: 113px;
 }
 .intro  article a{
-    text-decoration: none;
     font-size: 13px;
     color: white;
+    padding: 17px 43px;
     border-radius: 100px;
     background-color: #FF5274;
-    padding: 18px 39px 18px 39px;
 }
 .intro  article a:hover{
     background-color:rgba(255, 82, 117, 0.788);
     color: white;
 }
 .intro  section{
-    position: absolute;
-    margin-top: 165px;
-    margin-left: 646px;
+    margin-top: -21px;
+    margin-left: 192px;
 }
 .intro  section a{
-    text-decoration: none;
     font-size: 13px;
     color: #FF5274;
+    padding: 15px 40px;
     border-radius: 100px;
     border: 2px solid #FF5274; 
-    padding: 16px 39px 16px 39px;
 }
 .intro  section a:hover{
     border: 2px solid #FF5274; 
     background: #FF5274;
     color: white;
 } 
-.iconos{
-    margin-top: 450px;
-}
-.iconos .uno{
-   position: absolute;
-   width: 3%;
-   margin-top: 76px;
-   margin-left: 54px;
-}
-.iconos .dos{
+.material-icons{
+    color: #fff;
+    font-size: 30px;
     position: absolute;
-    width: 3%;
-    margin-left: 450px;
-    margin-top: 76px
- }
- .iconos .tres{
-    position: absolute;
-    width: 3%;
-    margin-top: 76px;
-    margin-left: 844px;
- }
-.contenido{
-    width: 23%;
-    float: left;
-    margin-top: 400px;
-    margin: 65px -15px 0px 120px;
+    bottom: 30px;
+    left: 50%;
 }
 h5{
     color: #3d4351;
     font-size: 15px;
     margin-top: 10px;
+    font-weight: 500;
 }
 p{
     font-size: 15px;
+    line-height: 29px;
     color: rgba(28,54,83,.6);
     padding-bottom: 20px;
 }
+.intro-icon img{
+    width: 64%;
+    font-weight: 700;
+}
+.intro-icon{
+    vertical-align: top;
+    padding: 6px 0 0;
+    margin-right: 20px;
+}
+.intro-content {
+    width: 70%;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+ @media (min-width: 1200px){
+.container {
+    width: 1170px;
+}
+}
+@media only screen and (min-width: 601px){
+.container {
+    width: 85%;
+}
+}
+@media only screen and (min-width: 993px){
+.container {
+    width: 70%;
+}
+}
+
+
+@media (min-width: 992px){
+.container {
+    width: 970px;
+}
+}
+
+
+
+
 .intro-dos{
     position: absolute;
     background: #F3F4F8;
@@ -164,9 +200,6 @@ p{
     width: 100%;
     left: 0;
     right: 61%;
-}
-.container{
-    width: 1170px;
 }
 .intro-dos .imagenes{
     position: relative;
@@ -186,37 +219,79 @@ h3{
 }
 .contenidos{
     position: absolute;
-    margin-top: -721px;
+    margin-top: -1075px;
 }
-.conte-icon{
-    border-bottom: solid 1px #E6E9EA;
+.ipad{
+    width: 706px;
+    height: 1002px;
+}
+.iphone{
+    width: 304px;
+    height: 620px;
+    position: absolute;
+    left: 530px;
+    bottom: 129px;
 }
 .image-icon{
     margin-left: 615px;
     margin-top: 56px;
 }
 .image-icon p{
-    margin-left: 207px;
-    margin-right: 108px;
+    margin-left: 154px;
+    margin-right: 138px;
 }
 .image-icon h5{
-    margin-left: 207px;
+    margin-left: 154px;
 }
 .recycle{
     position: absolute;
-    margin-top: 29px;
+    margin-top: 0;
     margin-left: 88px;
     width: 3%;
 }
 .user{
     position: absolute;
-    margin-top: 5px;
+    margin-top: 0;
     margin-left: 88px;
     width: 3%;
 }
 .test{
     position: absolute;
-    margin-top: 80px;
+    margin-top: 0;
     margin-left: 88px;
     width: 3%;
 }
+.intro-tres{
+    background: #fff;
+    width: 100%;
+    margin-top: 1175px;
+    position: absolute;
+    margin-left: -41px;
+}
+
+.content{
+    margin-top: 140px;
+    margin-left: 20px;
+}
+.content p{
+    margin-right: 670px;
+    margin-top: 25px;
+}
+.content .boton{
+    position: absolute;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #FF5274;
+    border-radius: 100px;
+    border: 2px solid #FF5274; 
+    padding: -1px 39px 16px 39px;
+}
+.content .boton{
+    transition: .3s;
+  }
+.content .boton:hover{
+    border: 2px solid #FF5274; 
+    background: #FF5274;
+    color: white;
+  }
+ 
