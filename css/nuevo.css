@@ -2,36 +2,50 @@
 body {
     font-family: 'Open Sans', sans-serif;  
 }
-nav{
-    box-shadow: 0 0 transparent;
+.nav{
     position: fixed;
+    height: auto;
+    background: transparent;
+    font-size: 13px;
+    transition: .5s;
+    box-shadow: 0px 0px transparent;
+    z-index: 999;
 }
-nav .row{
+.nav.is-down {
+    background: #232731;
+}
+.nav.is-down>.container {
+    border: 0;
+    padding: 15px 0;
+}
+.nav .row{
     margin: 0;
 }
-nav .container{
-    width: 90%;
+.nav .container{
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 28.5px 0;
+    transition: .5s;
+    width: 90%;
+    padding: 28.5px 0px;
 }
-nav .login{
+
+.nav .login{
     margin-right: 40px;
 }
-nav .login>li:nth-child(2)>a{
+.nav .login>li:nth-child(2)>a{
     background-color: transparent;
     box-shadow: 0 0 transparent;
     padding: 0 40px;
     border-radius: 100px;
     border: 1.5px white solid;
 }
-nav .login>li:nth-child(2)>a:hover{
+.nav .login>li:nth-child(2)>a:hover{
     border: solid 1px #FF5274;
 }
-nav ul li a, .login {
+.nav ul li a, .login {
     transition: .4s;
     font-size: 13px;
 }
-nav ul li a:hover, .login:hover {
+.nav ul li a:hover, .login:hover {
     color: #FF5274;
     background: transparent;
 }
@@ -64,7 +78,6 @@ section .row .col .intro-icon{
 }
 
 .fondo{
-    transition: .4s;
     position: relative;
     min-height: 750px;
     background: url(../assets/hero.jpg) center center;
@@ -255,9 +268,22 @@ p{
     background: #fff;
 }
 .features{
-    margin-top: -20px;
     z-index: 3;
     overflow: hidden;
+    margin-top: -21px;
+}
+.intro-tres p{
+    padding: 8px 2px;
+    
+}
+.intro-tres, .boton{
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28, 54, 83, .6);
+    padding-bottom: 20px;
+}
+.intro-tres .container .row{
+    padding: 120px 0;
 }
 
 .boton{
@@ -277,13 +303,14 @@ p{
     margin-top: 20px;
 }
  .features .macbook-wrap {
-    position: relative;
-    height: 540px;
-    left: 35%;
-    top: -600px;
+    position: absolute;
+    width: 915px;
+    height: 530px;
+    left: 50%;
+    top: 115px;
     background: url(../assets/macbook-pro.png) center center no-repeat;
 }  
-.responsive-img{
+.de-img{
     display: none;
 }
 .intro-cuatro{
@@ -297,7 +324,7 @@ p{
     margin: 0 0 20px;
     text-align: center;
 }
-.intro-cuatro p {
+.intro-cuatro p   {
     color: #ACB1B4;
     text-align: center;
 }
@@ -332,7 +359,61 @@ p{
     left: 42%;
     animation: efecto 3s alternate infinite;
 }
-
+.intro-cinco{
+    background: #F3F4F8;
+    padding-top: 200px;
+}
+.intro-cinco .left-align {
+    padding-right: 100px;
+    border-right: solid 1px #E6E9EA;
+}
+.intro-cinco .left-align2 {
+    padding-left: 100px;
+}
+section:nth-child(6) .row{
+    padding: 0;
+}
+.intro-seis{
+    background: #F3F4F8;
+    margin-top: -20px;
+}
+.intro-seis h2 {
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 35px;
+    text-align: center;
+}
+a{
+    color: #FF5274;
+}
+.intro-seis a.z {
+    color: rgba(28,54,83,.6);
+}
+.intro-seis p{
+    text-align: center;
+}
+.intro-seis .boton{
+    font-size: 13px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 2px 40px;
+    color: #FF5274;
+    margin-left: 580px;
+    margin-top: 20px;
+}
+.intro-seis .boton:hover{
+    border: 2px solid #FF5274; 
+    background: #FF5274;
+    color: white;
+}
+.intro-seis .row{
+    margin: 5px;
+}
+.intro-siete{
+    background: url(../assets/testimonials-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 
 @media only screen and (min-width: 768px){
@@ -353,23 +434,16 @@ p{
     .features .macbook-wrap{
         display: none;
     }
-    .responsive-img{
+    .de-img{
         display: block;
         text-align: center;
         margin: 15% auto 0;
         width: 100%;
         margin-top: -83px;
     }
-    .responsive-img, .imgs{
+    .de-img, .imgs{
         width: 85%;
-    }
-    .intro-cuatro .boton{
-        margin-left: 38%;
-    } 
-    .intro-cuatro .logo{
-        margin-left: -4%;
-        bottom: -210px;
-    }     
+    }    
 }
 @media only screen and (min-width: 992px){
     .container {
@@ -382,9 +456,6 @@ p{
         float: left;
         width: 41%;
     }
-    .intro-cuatro .boton{
-        margin-left: 42%;
-    } 
   
     
 }
@@ -392,11 +463,10 @@ p{
     .intro{
         padding-top: 20%;
       }
-    .container {
+    .container{
         width: 1170px;
     }
-       
-    
+         
 }
 
 
