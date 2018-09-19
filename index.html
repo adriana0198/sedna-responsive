@@ -233,52 +233,60 @@
 
     <section class="intro-seis">
         <div class="row">
-            <div class="col m12 l4">
-                <div class="galeria">
-                    <img class="responsive-img"  src="assets/blog-img-01.jpg" >
+            <div class="col m12 l4 conte">
+               <div class="light-box1">
+                   <div class="light-content">
+                     <a href="#blog"><img src="./assets/x.png" id="close1" class="cerrar"></a>
+                     <img src="./assets/blog-img-01.jpg" class="over">
+                   </div>
+                </div>
+                <div class="photo">
+                    <img class="responsive-img" src="./assets/blog-img-01.jpg" >
                     <div class="mascara">
-                        <img  src="./assets/search.png" >
+                        <a href="#blog"><img class="lupa" id="open1" src="./assets/search.png"></a>
                     </div>
                 </div>
-                <h2 class="center">
-                    <a href="#">PRODUCT</a>
-                </h2>
-                <p>
-                    <a class="z" href="#">Getting started with Sedna ></a>
-                </p>
+                <h2 class="center"><a href="#">PRODUCT</a></h2>
+                <p class="paga"><a href="#">Getting started with Sedna ></a></p>
             </div> 
-            <div class="col m12 l4 ">
-                <div class="galeria">
-                    <img class="responsive-img"  src="assets/blog-img-02.jpg" >
+            <div class="col m12 l4 conte">
+                <div class="photo">
+                    <div class="light-box2">
+                        <div class="light-content">
+                            <a href="#blog"><img src="./assets/x.png" id="close2" class="cerrar2"></a>
+                            <img src="./assets/blog-img-02.jpg" class="over">
+                        </div>
+                    </div>
+                    <img class="responsive-img" src="./assets/blog-img-02.jpg" >
                     <div class="mascara">
-                        <img  src="./assets/search.png" >
+                        <a href="#blog"><img class="lupa" id="open2" src="./assets/search.png"></a>
                     </div>
                 </div>
-                <h2>
-                    <a href="#">TECHNOLOGY</a>
-                </h2>
-                <p>
-                    <a class="z" href="#">Why IE8 support is deminishing ></a>
-                </p>
+                <h2 class="center"><a href="#">TECHNOLOGY</a></h2>
+                <p class="paga"><a href="#">Why IE8 support is deminishing</a></p>
             </div>
-            <div class="col m12 l4 ">
-                <div class="galeria">
-                    <img class="responsive-img"  src="assets/blog-img-03.jpg" >
+            <div class="col m12 l4 conte">
+                <div class="photo">
+                    <div class="light-box3">
+                        <div class="light-content">
+                            <a href="#blog"><img src="./assets/x.png" id="close3" class="cerrar3"></a>
+                            <img src="./assets/blog-img-03.jpg" class="over">
+                        </div>
+                    </div>
+                    <img class="responsive-img" src="./assets/blog-img-03.jpg" >
                     <div class="mascara">
-                        <img  src="./assets/search.png" >
+                        <a href="#blog"><img class="lupa" id="open3" src="./assets/search.png"></a>
                     </div>
                 </div>
-                <h2>
-                    <a href="#">PRODUCT</a>
-                </h2>
-                <p>
-                    <a class="z" href="#">Sedna tutorial: How to begin your ></a>
-                </p>
+                <h2 class="center"><a href="#">PRODUCT</a></h2>
+                <p class="paga"><a href="#">Sedna tutorial: How to begin your ></a></p>
             </div>
-            <a href="#" class="boton">MORE NEWS</a>
-        </div>
+            </div>
+            <div class="xxxx">
+                <a href="#" class="b boton">More news</a>
+            </div>
     </section>
-
+        
     <section class="intro-siete">
             <div class="row">
                 <div class="col s12 ">
@@ -286,19 +294,19 @@
                         <div class="carousel-item center-align" href="#one!">
                             <div class="imgslide1 circle"></div>
                             <h2>"Lorem ipsum dolor sit amet, nullam lucia nisi."</h2>
-                            <h5 class="light grey-text text-lighten-3">PETER FINLAN, PRODUCT DESIGNER</h5>
+                            <h5 class="light text-lighten-3">PETER FINLAN, PRODUCT DESIGNER</h5>
                         </div>
                     
                         <div class="carousel-item center-align" href="#two!">
                             <div class="imgslide2 circle"></div>
                             <h2>"Nunc vel maximus purus. Nullam ac urna ornare."</h2>
-                            <h5 class="light grey-text text-lighten-3">MANOELA ILIC, FOUNDER @ CODROPS.</h5>
+                            <h5 class="light text-lighten-3">MANOELA ILIC, FOUNDER @ CODROPS.</h5>
                         </div>
                     
                         <div class="carousel-item center-align" href="#three!">
                             <div class="imgslide3 circle"></div>
                             <h2>"Nullam ac urna ornare, ultrices nisl ut, lacinia nisi."</h2>
-                            <h5 class="light grey-text text-lighten-3">BLAZ ROBAR, PIXEL GURU</h5>
+                            <h5 class="light text-lighten-3">BLAZ ROBAR, PIXEL GURU</h5>
                         </div>
                         <div class="arrowleft">
                             <i class="medium material-icons">chevron_left</i>
@@ -311,30 +319,104 @@
             </div>
     </section>
 
-    <section class="intro-ocho">
+    <section id="download" class="section  scrollspy intro-ocho">
         <div class="container">
             <div class="row">
-                <div class="col m6 offset-m3">
+                <div class="col m6 offset-m3 " >
                     <h3>Get started with Sedna, absolutely free</h3>
-                    <p>Grab your copy today, exclusively from Codrops</p>
-                    <form class="singup" action="#">
-                        <div class="formulario">        
-                            <i class=" e material-icons">email</i>
+                    <p class="parrafo">Grab your copy today, exclusively from Codrops</p>
+                    <form class="singup" action="?">
+                        <div class="formularios">        
+                            <i class=" material-icons">email</i>
+                            <input type="text" class="email" placeholder="Enter your email" required>
                         </div>
-                        <div class="formulario">        
-                            <i class=" e material-icons">lock</i>   
+                        <div class="formularios">        
+                            <i class=" material-icons">enhanced_encryption</i>  
+                            <input required id="password" type="password" placeholder="Enter your password" class="validate" required>
                         </div>
-
+                        <a class="bt4"><button type="submit" class="btn-fill sign-up-btn" >SIGN UP FOR FREE</button></a>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="intro-nueve">
+        <div class="container">
+            <div class="row">
+                <div class="btn2">
+                    <a href="#top" class="top">
+                       <i class=" a material-icons">expand_less</i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col m7">
+                    <div class="links">
+                        <ul class="group-link">
+                            <li>
+                                <a href="#">FEATURES</a>
+                            </li>
+                            <li>
+                                <a href="#">PRINCING</a>
+                            </li>
+                            <li>
+                                <a href="#">SIGN UP</a>
+                            </li>
+                            <li>
+                                <a href="#">LICENCE</a>
+                            </li>
+                            <li>
+                                <a href="#">CODROPS</a>
+                            </li>
+                            <li>
+                                <a href="#">DRIBBBLE</a>
+                            </li>    
+                        </ul>
+                        <p>
+                            Copyright © 2015 
+                            <a href="#">Sedna</a>
+                            <br>
+                            <a href="">Licence</a>
+                            | Crafted with 
+                            <span>
+                                <i class="h material-icons ">favorite</i>                                   
+                            </span>
+                            for
+                            <a href="">Codrops</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="social">
+                    <p>SHARE SEDNA WITH YOUR FRIENDS</p>
+                    <a href="#" class="twitter">
+                        <i>
+                            <img src="./assets/twitter-logo.png">
+                        </i>
+                    </a>
+                    <a href="#" class="facebook">
+                        <i>
+                            <img src="./assets/facebook-logo.png">
+                        </i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
     
         
 
     <script src="js/materialize.min.js"></script>
     <script src="js/nuevo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 </body>
 </html>
