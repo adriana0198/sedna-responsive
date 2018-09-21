@@ -716,6 +716,10 @@ input:focus {
     color: #fff;
     background-color: rgba(0,0,0,.15);
 }
+.fa{
+    transform: translate(0, 0);
+    display: inline-block;
+}
 .intro-nueve .btn2 i{
     font-size: 30px;
     line-height: 55px;
@@ -789,6 +793,14 @@ footer .social a.facebook {
     font-size: 22px;
     text-align: center;
     display: inline-block;
+}
+.links ul li a{
+    transition: .4s;
+    font-size: 13px;
+}
+.links ul li a:hover {
+    color: #FF5274;
+    background: transparent;
 }
 footer img{
     width: 20px;
